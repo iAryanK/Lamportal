@@ -11,6 +11,7 @@ import LamportalInfo from "./LamportalInfo";
 
 const CentralCard = () => {
   const { navLink } = useNavLink();
+
   return (
     <div className="h-96 w-80 max-sm:w-[22rem] bg-white text-black shadow-2xl rounded-xl relative">
       <ConnectionTab>

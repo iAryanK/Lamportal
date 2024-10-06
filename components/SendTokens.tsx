@@ -30,10 +30,31 @@ export function SendTokens() {
   }
 
   return (
-    <div>
-      <input id="to" type="text" placeholder="To" />
-      <input id="amount" type="text" placeholder="Amount" />
-      <button onClick={sendTokens}>Send</button>
+    <div className="h-full w-full flex-col flex justify-evenly">
+      <p className="text-xs font-mono px-5 mx-auto text-justify">
+        Send Solana to any account on devnet.
+      </p>
+
+      <div className="flex flex-col gap-1 max-w-56 mx-auto">
+        <input
+          id="to"
+          type="text"
+          placeholder="To"
+          className="p-2 border border-slate-500 rounded-lg"
+        />
+        <input
+          id="amount"
+          type="text"
+          placeholder="Amount"
+          className="p-2 border border-slate-500 rounded-lg"
+        />
+        <button
+          onClick={sendTokens}
+          className="bg-purple-700 text-white p-2 rounded-br-md rounded-sm rounded-tl-md text-sm shadow-md font-semibold tracking-wide"
+        >
+          Send
+        </button>
+      </div>
     </div>
   );
 }

@@ -22,18 +22,23 @@ const RequestAirdrop = () => {
 
   return (
     <>
-      <input
-        type="text"
-        ref={amountRef}
-        placeholder="Amount"
-        className="p-2 border border-gray-300 rounded-lg"
-      />
-      <button
-        onClick={requestAirdrop}
-        className="bg-blue-900 text-white p-2 rounded-md text-sm font-semibold tracking-wide"
-      >
-        Request Airdrop
-      </button>
+      <div className="flex flex-col gap-1 max-w-52">
+        <input
+          type="text"
+          ref={amountRef}
+          placeholder="Amount"
+          className="p-2 border border-slate-500 rounded-lg"
+        />
+        <button
+          onClick={requestAirdrop}
+          className="bg-purple-700 text-white p-2 rounded-br-md rounded-sm rounded-tl-md text-sm shadow-md font-semibold tracking-wide"
+        >
+          Request Airdrop
+        </button>
+      </div>
+      <p className="text-xs font-mono text-center max-w-56">
+        ℹ️ Airdrop cannot be requested while using mainnet.
+      </p>
     </>
   );
 };
