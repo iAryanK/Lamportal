@@ -12,6 +12,7 @@ import {
   WalletDisconnectButton,
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
+import Link from "next/link";
 
 export default function Home() {
   const { connectionLink } = useConnectionLink();
@@ -27,6 +28,16 @@ export default function Home() {
               <WalletDisconnectButton />
             </div>
             <CentralCard />
+
+            <p className="text-white text-xs pt-10 sm:pt-2 tracking-wide font-mono">
+              Create your solana tokens on{" "}
+              <Link
+                href="https://sol_tokenizer.vercel.app"
+                className="text-white bg-green-950 p-[2px] rounded-sm border border-muted-foreground hover:bg-green-900"
+              >
+                Tokenizer
+              </Link>
+            </p>
           </div>
         </WalletModalProvider>
       </WalletProvider>
