@@ -32,7 +32,7 @@ export default function Home() {
             <p className="text-white text-xs pt-10 sm:pt-2 tracking-wide font-mono">
               Create your solana tokens on{" "}
               <Link
-                href="https://sol_tokenizer.vercel.app"
+                href="https://sol-tokenizer.vercel.app"
                 className="text-white bg-green-950 p-[2px] rounded-sm border border-muted-foreground hover:bg-green-900"
               >
                 Tokenizer
